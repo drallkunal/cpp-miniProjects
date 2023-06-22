@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main()}
+int main(){
     
     char op;
     double num1;
