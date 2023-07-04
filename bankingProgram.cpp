@@ -20,7 +20,8 @@ int main()
         std::cout << "4. Exit\n";
         std::cin >> choice;
 
-       
+        std::cin.clear(); 
+        fflush(stdin);
 
         switch(choice){
             case 1: showBalance(balance);
