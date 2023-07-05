@@ -39,3 +39,27 @@ char getUserChoice(){
 
 	return player;
 }
+char getComputerChoice(){
+
+	srand(time(0));
+	int num = rand() % 3 + 1;
+
+	switch(num){
+		case 1: return 'r';
+		case 2: return 'p';
+		case 3: return 's';
+	}
+
+	return 0;
+}
+void showChoice(char choice){
+
+	switch(choice){
+		case 'r': std::cout << "Rock\n";
+				  break;
+		case 'p': std::cout << "Paper\n";
+				  break;
+		case 's': std::cout << "Scissors\n";
+				  break;
+	}
+}
